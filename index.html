@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Verpflegungsmehraufwendungen</title>
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">VAF</a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" onclick="showSection('introduction')"
+                >Startseite</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showSection('vaf-inland')"
+                >VAF im Inland</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showSection('vaf-ausland')"
+                >VAF im Ausland</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onclick="showSection('begriffsbestimmungen')"
+                >Begriffsbestimmungen</a
+              >
+            </li>
+          </ul>
+          <div class="dropdown adjusted-margin">
+            <button
+              class="btn btn-light dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bars"></i>
+              Menu
+            </button>
+            <div
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenuButton"
+              onmouseleave="this.classList.remove('show');"
+            >
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="showSection('introduction'); this.parentElement.classList.remove('show'); return false;"
+                >Startseite</a
+              >
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="showSection('vaf-inland'); this.parentElement.classList.remove('show'); return false;"
+                >VAF im Inland</a
+              >
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="showSection('vaf-ausland'); this.parentElement.classList.remove('show'); return false;"
+                >VAF im Ausland</a
+              >
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="showSection('begriffsbestimmungen'); this.parentElement.classList.remove('show'); return false;"
+                >Begriffsbestimmungen</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-4">
+      <section id="introduction" class="content-section">
+        <h2>Einleitung</h2>
+        <p>
+          Die einem Arbeitnehmer anlässlich einer beruflich veranlassten
+          Auswärtstätigkeit entstehenden Aufwendungen sind Reisekosten. Zu den
+          Reisekosten gehören neben den Fahrtkosten, Übernachtungskosten und
+          Reisenebenkosten auch die Mehraufwendungen für Verpflegung (sog.
+          Verpflegungsmehraufwendungen).
+        </p>
+        <p>
+          Eine auswärtige berufliche Tätigkeit liegt vor, wenn der Arbeitnehmer
+          außerhalb seiner Wohnung und ersten Tätigkeitsstätte beruflich tätig
+          ist. Erste Tätigkeitsstätte ist dabei die ortsfeste betriebliche
+          Einrichtung des Arbeitgebers, eines verbundenen Unternehmens oder
+          eines vom Arbeitgeber bestimmten Dritten, der der Arbeitnehmer
+          dauerhaft zugeordnet ist.
+        </p>
+      </section>
+
+      <section id="vaf-inland" class="content-section" style="display: none">
+        <h2>Verpflegungsmehraufwendungen im Inland</h2>
+        <br />
+        <article>
+          <h3>Regel 1: Eintägige Auswärtstätigkeiten ohne Übernachtung</h3>
+          <p>
+            Quellsatz: Für eintägige Auswärtstätigkeiten im Inland ohne
+            Übernachtung ist eine Verpflegungspauschale in Höhe von 14 Euro bei
+            einer Mindestabwesenheitsdauer von mehr als 8 Stunden als
+            Werbungskosten abziehbar.
+          </p>
+          <p>
+            Beschreibung: Wenn Abwesenheit > 8 Stunden, dann
+            Verpflegungspauschale = 14 Euro.
+          </p>
+        </article>
+        <br />
+        <article>
+          <h3>Regel 2: Mehrtägige auswärtige Tätigkeit mit Übernachtung</h3>
+          <p>
+            Quellsatz: Bei einer mehrtägigen auswärtigen Tätigkeit mit
+            Übernachtung kann für den An- und Abreisetag ohne Prüfung einer
+            Mindestabwesenheitsdauer eine Verpflegungspauschale von 14 Euro als
+            Werbungskosten berücksichtigt werden.
+          </p>
+          <p>
+            Beschreibung: An- und Abreisetag (jeweils): Verpflegungspauschale =
+            14 Euro.
+          </p>
+        </article>
+        <br />
+        <article>
+          <h3>Regel 3: Mehrtägige Tätigkeit mit 24 Stunden Abwesenheit</h3>
+          <p>
+            Quellsatz: An den Zwischentagen, an denen der Arbeitnehmer 24
+            Stunden von seiner Wohnung abwesend ist, ist eine
+            Verpflegungspauschale von 28 Euro anzusetzen.
+          </p>
+          <p>
+            Beschreibung: Wenn Abwesenheit = 24 Stunden, dann
+            Verpflegungspauschale = 28 Euro.
+          </p>
+        </article>
+        <br />
+        <article>
+          <h3>
+            Regel 4: Mehrtägige Tätigkeit ohne Übernachtung, aber über 8 Stunden
+            Abwesenheit
+          </h3>
+          <p>
+            Quellsatz: Eine Pauschale von 14 Euro ist auch zu berücksichtigen,
+            wenn der Arbeitnehmer seine auswärtige berufliche Tätigkeit an zwei
+            Kalendertagen über Nacht ausübt, dabei nicht übernachtet und dadurch
+            ebenfalls insgesamt mehr als 8 Stunden von der Wohnung oder der
+            ersten Tätigkeitsstätte abwesend ist.
+          </p>
+          <p>
+            Beschreibung: Wenn Abwesenheit > 8 Stunden über zwei Tage verteilt
+            ohne Übernachtung, dann Verpflegungspauschale = 14 Euro für den Tag
+            mit der größeren Abwesenheitsdauer.
+          </p>
+        </article>
+      </section>
+
+      <section id="vaf-ausland" class="content-section" style="display: none">
+        <h2>Verpflegungsmehraufwendungen im Ausland</h2>
+        <br />
+        <article>
+          <h3>Regel 5: Auswärtige Tätigkeiten im Ausland</h3>
+          <p>
+            Quellsatz: Für berufliche Auswärtstätigkeiten im Ausland gelten
+            länderweise unterschiedliche Pauschbeträge, die bei einer
+            Abwesenheitsdauer von 24 Stunden mit 120 % sowie für den An- und
+            Abreisetag sowie bei eintägigen auswärtigen Tätigkeiten mit einer
+            Mindestabwesenheitsdauer von mehr als 8 Stunden mit 80 % der
+            Auslandstagegelder nach dem Bundesreisekostengesetz festgesetzt
+            werden.
+          </p>
+          <p>
+            Beschreibung: Wenn Abwesenheit = 24 Stunden, dann
+            Verpflegungspauschale = 120% des festgelegten Auslandstagegeldes.
+            An- und Abreisetag: Verpflegungspauschale = 80% des festgelegten
+            Auslandstagegeldes.
+          </p>
+        </article>
+      </section>
+
+      <section
+        id="begriffsbestimmungen"
+        class="content-section"
+        style="display: none"
+      >
+        <h2>Begriffsbestimmungen und weitere Informationen</h2>
+        <p>
+          Mehr Informationen zu den gesetzlich festgelegten Pauschalen finden
+          Sie auf der offiziellen Webseite des Bundesministeriums der Finanzen.
+        </p>
+        <p>
+          <a
+            href="https://www.bundesfinanzministerium.de/Content/DE/Glossareintraege/V/002_Verpflegungsmehraufwendungen.html?view=renderHelp"
+            >Mehr über Verpflegungsmehraufwendungen</a
+          >
+        </p>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+        function showSection(sectionId) {
+          const sections = document.querySelectorAll(".content-section");
+          sections.forEach((section) => {
+            if (section.id === sectionId) {
+              section.style.display = "block";
+            } else {
+              section.style.display = "none";
+            }
+          });
+        }
+      </script>
+    </main>
+    <div class="container mt-4 mb-4">
+      <p class="disclaimer">
+        <strong>Disclaimer:</strong> Die bereitgestellten Informationen auf
+        dieser Seite sind sorgfältig geprüft, jedoch ohne Gewähr. Es wird keine
+        Haftung für Schäden, die direkt oder indirekt aus der Verwendung der
+        bereitgestellten Informationen entstehen.
+      </p>
+    </div>
+    <footer class="bg-primary text-white text-center p-3">
+      <p>© 2024 Mehjung</p>
+    </footer>
+  </body>
+</html>
