@@ -17,115 +17,120 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">VAF</a>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">VAF</a>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" onclick="showSection('introduction')"
-                >Startseite</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link vaf-steuer"
-                href="#"
-                onclick="showSection('vaf-inland')"
-                >VAF im Inland</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link vaf-steuer"
-                href="#"
-                onclick="showSection('vaf-ausland')"
-                >VAF im Ausland</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link vaf-tarif"
-                href="#"
-                onclick="showSection('vaf-tarif')"
-                >VAF nach Tarif</a
-              >
-            </li>
-            <li class="nav-item">
-              <div class="row">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
                 <a
-                  class="nav-link vaf-tarif col px-0"
+                  class="nav-link"
                   href="#"
-                  onclick="showSection('vaf-bestimmungen')"
-                  >Begriffsbe</a
+                  onclick="showSection('introduction')"
+                  >Startseite</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link vaf-steuer"
+                  href="#"
+                  onclick="showSection('vaf-inland')"
+                  >VAF im Inland</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link vaf-steuer"
+                  href="#"
+                  onclick="showSection('vaf-ausland')"
+                  >VAF im Ausland</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link vaf-tarif"
+                  href="#"
+                  onclick="showSection('vaf-tarif')"
+                  >VAF nach Tarif</a
+                >
+              </li>
+              <li class="nav-item">
+                <div class="row">
+                  <a
+                    class="nav-link vaf-tarif col px-0"
+                    href="#"
+                    onclick="showSection('vaf-bestimmungen')"
+                    >Begriffsbe</a
+                  >
+                  <a
+                    class="nav-link vaf-steuer col px-0"
+                    href="#"
+                    onclick="showSection('begriffsbestimmungen')"
+                    >stimmungen</a
+                  >
+                </div>
+              </li>
+            </ul>
+
+            <div class="dropdown adjusted-margin">
+              <button
+                class="btn btn-light dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fas fa-bars"></i>
+                Menu
+              </button>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuButton"
+                onmouseleave="this.classList.remove('show');"
+              >
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="showSection('introduction'); this.parentElement.classList.remove('show'); return false;"
+                  >Startseite</a
                 >
                 <a
-                  class="nav-link vaf-steuer col px-0"
+                  class="dropdown-item"
                   href="#"
-                  onclick="showSection('begriffsbestimmungen')"
-                  >stimmungen</a
+                  onclick="showSection('vaf-inland'); this.parentElement.classList.remove('show'); return false;"
+                  >VAF im Inland</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="showSection('vaf-ausland'); this.parentElement.classList.remove('show'); return false;"
+                  >VAF im Ausland</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="showSection('vaf-tarif'); this.parentElement.classList.remove('show'); return false;"
+                  >VAF nach Tarif</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="showSection('begriffsbestimmungen'); this.parentElement.classList.remove('show'); return false;"
+                  >Begriffsbestimmungen Gesetz</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  onclick="showSection('vaf-bestimmungen'); this.parentElement.classList.remove('show'); return false;"
+                  >Begriffsbestimmungen Tarif</a
                 >
               </div>
-            </li>
-          </ul>
-
-          <div class="dropdown adjusted-margin">
-            <button
-              class="btn btn-light dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <i class="fas fa-bars"></i>
-              Menu
-            </button>
-            <div
-              class="dropdown-menu"
-              aria-labelledby="dropdownMenuButton"
-              onmouseleave="this.classList.remove('show');"
-            >
-              <a
-                class="dropdown-item"
-                href="#"
-                onclick="showSection('introduction'); this.parentElement.classList.remove('show'); return false;"
-                >Startseite</a
-              >
-              <a
-                class="dropdown-item"
-                href="#"
-                onclick="showSection('vaf-inland'); this.parentElement.classList.remove('show'); return false;"
-                >VAF im Inland</a
-              >
-              <a
-                class="dropdown-item"
-                href="#"
-                onclick="showSection('vaf-ausland'); this.parentElement.classList.remove('show'); return false;"
-                >VAF im Ausland</a
-              >
-              <a
-                class="dropdown-item"
-                href="#"
-                onclick="showSection('vaf-tarif'); this.parentElement.classList.remove('show'); return false;"
-                >VAF nach Tarif</a
-              >
-              <a
-                class="dropdown-item"
-                href="#"
-                onclick="showSection('begriffsbestimmungen'); this.parentElement.classList.remove('show'); return false;"
-                >Begriffsbestimmungen Gesetz</a
-              >
-              <a
-                class="dropdown-item"
-                href="#"
-                onclick="showSection('vaf-bestimmungen'); this.parentElement.classList.remove('show'); return false;"
-                >Begriffsbestimmungen Tarif</a
-              >
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="container mt-4">
