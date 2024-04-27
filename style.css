@@ -23,6 +23,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-nav {
@@ -77,4 +83,22 @@ footer {
 
 .adjusted-margin {
   margin-right: 350px;
+}
+
+.vaf-steuer {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.vaf-tarif {
+  font-weight: bold;
+}
+
+.disclaimer {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

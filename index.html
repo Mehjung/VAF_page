@@ -28,24 +28,47 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('vaf-inland')"
+              <a
+                class="nav-link vaf-steuer"
+                href="#"
+                onclick="showSection('vaf-inland')"
                 >VAF im Inland</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="showSection('vaf-ausland')"
+              <a
+                class="nav-link vaf-steuer"
+                href="#"
+                onclick="showSection('vaf-ausland')"
                 >VAF im Ausland</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link vaf-tarif"
                 href="#"
-                onclick="showSection('begriffsbestimmungen')"
-                >Begriffsbestimmungen</a
+                onclick="showSection('vaf-tarif')"
+                >VAF nach Tarif</a
               >
             </li>
+            <li class="nav-item">
+              <div class="row">
+                <a
+                  class="nav-link vaf-tarif col px-0"
+                  href="#"
+                  onclick="showSection('vaf-bestimmungen')"
+                  >Begriffsbe</a
+                >
+                <a
+                  class="nav-link vaf-steuer col px-0"
+                  href="#"
+                  onclick="showSection('begriffsbestimmungen')"
+                  >stimmungen</a
+                >
+              </div>
+            </li>
           </ul>
+
           <div class="dropdown adjusted-margin">
             <button
               class="btn btn-light dropdown-toggle"
@@ -84,8 +107,20 @@
               <a
                 class="dropdown-item"
                 href="#"
+                onclick="showSection('vaf-tarif'); this.parentElement.classList.remove('show'); return false;"
+                >VAF nach Tarif</a
+              >
+              <a
+                class="dropdown-item"
+                href="#"
                 onclick="showSection('begriffsbestimmungen'); this.parentElement.classList.remove('show'); return false;"
-                >Begriffsbestimmungen</a
+                >Begriffsbestimmungen Gesetz</a
+              >
+              <a
+                class="dropdown-item"
+                href="#"
+                onclick="showSection('vaf-bestimmungen'); this.parentElement.classList.remove('show'); return false;"
+                >Begriffsbestimmungen Tarif</a
               >
             </div>
           </div>
@@ -101,8 +136,11 @@
           Auswärtstätigkeit entstehenden Aufwendungen sind Reisekosten. Zu den
           Reisekosten gehören neben den Fahrtkosten, Übernachtungskosten und
           Reisenebenkosten auch die Mehraufwendungen für Verpflegung (sog.
-          Verpflegungsmehraufwendungen).
+          Verpflegungsmehraufwendungen). Neben der gesetzlichen Regelung der
+          Verpflegungsmehraufwendungen, gibt es auch tarifliche Regelungen, die
+          in Tarifverträgen festgelegt.
         </p>
+        <p>Siehe die Begriffsbestimmungen für weitere Informationen.</p>
         <p>
           Eine auswärtige berufliche Tätigkeit liegt vor, wenn der Arbeitnehmer
           außerhalb seiner Wohnung und ersten Tätigkeitsstätte beruflich tätig
@@ -176,9 +214,8 @@
           </p>
         </article>
       </section>
-
       <section id="vaf-ausland" class="content-section" style="display: none">
-        <h2>Verpflegungsmehraufwendungen im Ausland</h2>
+        <h2>Verpflegungsmehraufwendungen im Inland</h2>
         <br />
         <article>
           <h3>Regel 5: Auswärtige Tätigkeiten im Ausland</h3>
@@ -200,12 +237,55 @@
         </article>
       </section>
 
+      <section id="vaf-tarif" class="content-section" style="display: none">
+        <h2>Verpflegungsmehraufwendungen nach Tarif</h2>
+        <h2>Regeln für Verpflegungspauschalen bei Fahrtätigkeiten</h2>
+        <br />
+        <article>
+          <h3>Regel 1: Kumulation von Abwesenheitszeiten</h3>
+          <p>
+            <strong>Quellsatz:</strong> Führen Arbeitnehmer an einem Kalendertag
+            mehrere Fahrten durch, sind die Abwesenheitszeiten an diesem
+            Kalendertag zusammenzurechnen.
+          </p>
+          <p>
+            <strong>Beschreibung:</strong> Wenn ein Arbeitnehmer im Laufe eines
+            Tages mehrere separate Fahrten unternimmt, werden alle einzelnen
+            Abwesenheitszeiten des Tages addiert, um die Gesamtabwesenheitszeit
+            zu ermitteln, die für die Berechnung der Verpflegungspauschale
+            relevant ist.
+          </p>
+        </article>
+        <article>
+          <h3>
+            Regel 2: Zuordnung der Fahrtätigkeit bei Überschreitung von
+            Mitternacht ohne Übernachtung
+          </h3>
+          <p>
+            <strong>Quellsatz:</strong> Sofern die Fahrtätigkeit nach 16.00 Uhr
+            begonnen und vor 8.00 Uhr des nachfolgenden Kalendertags beendet
+            wird, ohne dass eine Übernachtung stattfindet, wird die
+            Fahrtätigkeit mit der gesamten Abwesenheitsdauer dem Kalendertag der
+            überwiegenden Abwesenheit zugerechnet.
+          </p>
+          <p>
+            <strong>Beschreibung:</strong> Beginnt eine Fahrtätigkeit nach 16:00
+            Uhr und endet sie vor 08:00 Uhr des folgenden Tages ohne
+            Übernachtung, wird die gesamte Dauer dieser Fahrt dem Kalendertag
+            zugeordnet, an dem der Arbeitnehmer überwiegend abwesend war. Dies
+            bedeutet, dass die gesamte Dauer der Abwesenheit in die Berechnung
+            der Verpflegungspauschale für den Tag mit der längsten
+            Abwesenheitszeit einfließt.
+          </p>
+        </article>
+      </section>
+
       <section
         id="begriffsbestimmungen"
         class="content-section"
         style="display: none"
       >
-        <h2>Begriffsbestimmungen und weitere Informationen</h2>
+        <h2>Begriffsbestimmungen und weitere Informationen nach Gesetz</h2>
         <p>
           Mehr Informationen zu den gesetzlich festgelegten Pauschalen finden
           Sie auf der offiziellen Webseite des Bundesministeriums der Finanzen.
@@ -215,6 +295,21 @@
             href="https://www.bundesfinanzministerium.de/Content/DE/Glossareintraege/V/002_Verpflegungsmehraufwendungen.html?view=renderHelp"
             >Mehr über Verpflegungsmehraufwendungen</a
           >
+        </p>
+      </section>
+      <section
+        id="vaf-bestimmungen"
+        class="content-section"
+        style="display: none"
+      >
+        <h2>Begriffsbestimmungen und weitere Informationen nach Tarif</h2>
+        <p>
+          Mehr Informationen zu den tariflichen festgelegten Pauschalen finden
+          Sie unter den folgenden Quellen:
+        </p>
+        <p>
+          Aublbeibevergütung nach: FGr 2,4,5-Tve, LfTV, Dispo-,Zub,Lrf-TV, DS
+          (051), EVU FZITV
         </p>
       </section>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
